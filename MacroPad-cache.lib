@@ -1,0 +1,230 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D
+#
+DEF Device_D D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Rotary_Encoder_Switch
+#
+DEF Device_Rotary_Encoder_Switch SW 0 10 Y N 1 F N
+F0 "SW" 0 260 50 H V C CNN
+F1 "Device_Rotary_Encoder_Switch" 0 -260 50 H V C CNN
+F2 "" -150 160 50 H I C CNN
+F3 "" 0 260 50 H I C CNN
+$FPLIST
+ RotaryEncoder*Switch*
+$ENDFPLIST
+DRAW
+A -15 -2 108 -899 899 0 1 10 N -15 -110 -15 105
+C -150 0 10 0 1 0 F
+C -15 0 75 0 1 10 N
+C 170 -40 5 0 1 10 N
+C 170 40 5 0 1 10 N
+S -200 200 200 -200 0 1 10 f
+P 2 0 1 10 -25 -70 -25 70 N
+P 2 0 1 10 -15 -70 -15 70 N
+P 2 0 1 10 -5 70 -5 -70 N
+P 2 0 1 10 150 0 135 0 N
+P 2 0 1 10 150 40 150 -40 N
+P 3 0 1 0 -200 -100 -150 -100 -150 -80 N
+P 3 0 1 0 -200 100 -150 100 -150 80 N
+P 3 0 1 10 10 -120 -20 -110 5 -95 N
+P 3 0 1 10 10 115 -20 105 5 90 N
+P 3 0 1 10 200 -100 170 -100 170 -40 N
+P 3 0 1 10 200 100 170 100 170 40 N
+P 4 0 1 0 -200 0 -150 0 -150 -40 -130 -80 N
+P 4 0 1 0 -170 0 -150 0 -150 40 -130 80 N
+X A A -300 100 100 R 50 50 1 1 P
+X B B -300 -100 100 R 50 50 1 1 P
+X C C -300 0 100 R 50 50 1 1 P
+X S1 S1 300 100 100 L 50 50 1 1 P
+X S2 S2 300 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MacroPad-rescue_3.3V-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue
+#
+DEF MacroPad-rescue_3.3V-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue ~ 0 40 Y Y 1 L P
+F0 "" 0 0 50 H I C CNN
+F1 "MacroPad-rescue_3.3V-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue" -60 40 42 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 -50 0 0 N
+P 2 1 0 0 0 0 50 -50 N
+X 3.3V 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# MacroPad-rescue_FEATHERWING_NODIM-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue
+#
+DEF MacroPad-rescue_FEATHERWING_NODIM-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue MS 0 40 Y Y 1 L N
+F0 "MS" 0 0 50 H I C CNN
+F1 "MacroPad-rescue_FEATHERWING_NODIM-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 100 100 50 1 0 10 N
+C 100 1200 50 1 0 10 N
+C 1800 100 50 1 0 10 N
+C 1800 1200 50 1 0 10 N
+P 2 1 0 0 0 0 1900 0 N
+P 2 1 0 0 0 500 0 0 N
+P 2 1 0 0 0 900 0 500 N
+P 2 1 0 0 0 900 200 900 N
+P 2 1 0 0 0 1300 0 900 N
+P 2 1 0 0 200 500 0 500 N
+P 2 1 0 0 200 900 200 500 N
+P 2 1 0 0 200 1000 300 1000 N
+P 2 1 0 0 200 1300 0 1300 N
+P 2 1 0 0 200 1300 200 1000 N
+P 2 1 0 0 300 1000 400 1000 N
+P 2 1 0 0 300 1100 300 1000 N
+P 2 1 0 0 400 1000 500 1000 N
+P 2 1 0 0 400 1100 400 1000 N
+P 2 1 0 0 500 1000 500 1300 N
+P 2 1 0 0 500 1300 200 1300 N
+P 2 1 0 0 1900 0 1900 1300 N
+P 2 1 0 0 1900 1300 500 1300 N
+X ~RESET 1 200 -200 200 U 50 50 1 0 I
+X GPIOA5 10 1100 -200 200 U 50 50 1 0 B
+X GPIOSCK 11 1200 -200 200 U 50 50 1 0 B
+X GPIOMOSI 12 1300 -200 200 U 50 50 1 0 B
+X GPIOMISO 13 1400 -200 200 U 50 50 1 0 B
+X GPIORX 14 1500 -200 200 U 50 50 1 0 B
+X GPIOTX 15 1600 -200 200 U 50 50 1 0 B
+X NC 16 1700 -200 200 U 50 50 1 0 P
+X GPIOSDA 17 1700 1500 200 D 50 50 1 0 B
+X GPIOSCL 18 1600 1500 200 D 50 50 1 0 B
+X GPIO5 19 1500 1500 200 D 50 50 1 0 B
+X 3V 2 300 -200 200 U 50 50 1 0 W
+X GPIO6 20 1400 1500 200 D 50 50 1 0 B
+X GPIO9 21 1300 1500 200 D 50 50 1 0 B
+X GPIO10 22 1200 1500 200 D 50 50 1 0 B
+X GPIO11 23 1100 1500 200 D 50 50 1 0 B
+X GPIO12 24 1000 1500 200 D 50 50 1 0 B
+X GPIO13 25 900 1500 200 D 50 50 1 0 B
+X USB 26 800 1500 200 D 50 50 1 0 W
+X EN 27 700 1500 200 D 50 50 1 0 P
+X VBAT 28 600 1500 200 D 50 50 1 0 W
+X AREF 3 400 -200 200 U 50 50 1 0 P
+X GND 4 500 -200 200 U 50 50 1 0 W
+X GPIOA0 5 600 -200 200 U 50 50 1 0 B
+X GPIOA1 6 700 -200 200 U 50 50 1 0 B
+X GPIOA2 7 800 -200 200 U 50 50 1 0 B
+X GPIOA3 8 900 -200 200 U 50 50 1 0 B
+X GPIOA4 9 1000 -200 200 U 50 50 1 0 B
+ENDDRAW
+ENDDEF
+#
+# MacroPad-rescue_VBAT-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue
+#
+DEF MacroPad-rescue_VBAT-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue ~ 0 40 Y Y 1 L P
+F0 "" 0 0 50 H I C CNN
+F1 "MacroPad-rescue_VBAT-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue" -60 40 42 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 -50 0 0 N
+P 2 1 0 0 0 0 50 -50 N
+X VBAT 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# MacroPad-rescue_VBUS-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue
+#
+DEF MacroPad-rescue_VBUS-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue ~ 0 40 Y Y 1 L P
+F0 "" 0 0 50 H I C CNN
+F1 "MacroPad-rescue_VBUS-Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import-MacoPad-rescue" -60 40 42 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 -50 0 0 N
+P 2 1 0 0 0 0 50 -50 N
+X VBUS 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

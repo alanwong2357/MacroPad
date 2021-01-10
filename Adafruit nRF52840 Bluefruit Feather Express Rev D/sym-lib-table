@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Adafruit_nRF52840_Bluefruit_Feather_Express_Rev_D-eagle-import.lib)(options "")(descr ""))
+)
